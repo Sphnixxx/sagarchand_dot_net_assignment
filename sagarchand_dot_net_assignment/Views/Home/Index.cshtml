@@ -1,0 +1,163 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<style>
+    /* Custom Styles */
+    body {
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(to right, #00c6ff, #0072ff);
+        color: #333;
+        padding: 0;
+        margin: 0;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .display-4 {
+        font-size: 3.5rem;
+        font-weight: bold;
+        color: #ffffff;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .lead {
+        font-size: 1.2rem;
+        color: #ffffff;
+        margin-bottom: 1.5rem;
+    }
+
+    /* Card Styles */
+    .card {
+        border-radius: 15px;
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+        background-color: #ffffff;
+        border: none;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+
+    .card-body {
+        padding: 2.5rem;
+    }
+
+    .card-title {
+        font-size: 1.75rem;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 1.2rem;
+    }
+
+    .card-text {
+        font-size: 1.1rem;
+        color: #666;
+        line-height: 1.7;
+    }
+
+    .btn-primary {
+        background-color: #0072ff;
+        border-color: #0072ff;
+        padding: 1.2rem 2.5rem;
+        font-size: 1.1rem;
+        font-weight: bold;
+        border-radius: 50px;
+        transition: background-color 0.4s ease, transform 0.3s ease;
+    }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+    /* Card Container */
+    .card-container {
+        max-width: 750px;
+        margin: 2rem auto;
+        background: linear-gradient(to right, #ffffff, #f9f9f9);
+        padding: 1rem;
+        border-radius: 15px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Additional Blocks */
+    .info-block {
+        max-width: 800px;
+        margin: 2rem auto;
+        background-color: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+        text-align: left;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .info-block:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .info-block h5 {
+            font-size: 1.6rem;
+            color: #333;
+            font-weight: bold;
+            margin-bottom: 1.2rem;
+        }
+
+        .info-block p {
+            font-size: 1.1rem;
+            color: #777;
+            line-height: 1.8;
+        }
+
+    /* Spacing for the container */
+    .mt-5 {
+        margin-top: 5rem !important;
+    }
+
+    .mb-4 {
+        margin-bottom: 2rem !important;
+    }
+
+    /* Margin Top for Button */
+    .btn-container {
+        margin-top: 2rem;
+    }
+</style>
+
+<div class="text-center mt-5">
+    <h1 class="display-4 mb-4">Welcome to the University Alumni Portal</h1>
+    <p class="lead mb-4">This platform connects alumni of our university, providing a space to share experiences, connect with old friends, and access exclusive alumni resources.</p>
+
+    <!-- Small Block with Description -->
+    <div class="card card-container">
+        <div class="card-body">
+            <h5 class="card-title">What is this portal?</h5>
+            <p class="card-text">
+                Our alumni portal is designed to bridge the gap between alumni and the current university community. Stay updated with news, participate in events, and give back to the university through various alumni initiatives. Join now and be part of this growing community!
+            </p>
+            <div class="btn-container">
+                <a href="/ApplicationUsers" class="btn btn-primary btn-lg">Applications</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- New Block: About Pokhara University -->
+    <div class="info-block">
+        <h5>About Pokhara University</h5>
+        <p>Pokhara University (PU) is a prestigious educational institution located in Pokhara, Nepal. It is known for its world-class academic programs, advanced research initiatives, and diverse student body. With a focus on producing well-rounded graduates, PU has been a leading center for education and innovation, fostering excellence in various disciplines.</p>
+    </div>
+
+    <!-- New Block: Vision and Mission of Pokhara University -->
+    <div class="info-block">
+        <h5>Vision and Mission</h5>
+        <p>The vision of Pokhara University is to become an internationally recognized institution, offering quality education and research opportunities. The mission is to provide accessible, high-quality education that prepares students for global challenges, while emphasizing holistic development and community engagement.</p>
+    </div>
+</div>

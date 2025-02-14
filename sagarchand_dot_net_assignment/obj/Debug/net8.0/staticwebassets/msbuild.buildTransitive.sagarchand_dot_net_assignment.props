@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\sagarchand_dot_net_assignment.props" />
+</Project>
